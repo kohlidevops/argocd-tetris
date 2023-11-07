@@ -1,18 +1,18 @@
-# tetris-deployment.yaml
+# netflix-deployment.yaml
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tetris-deployment
+  name: netflix-deployment
 spec:
   replicas: 1 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: tetris
+      app: netflix
   template:
     metadata:
       labels:
-        app: tetris
+        app: netflix
     spec:
       containers:
         - name: tetris
